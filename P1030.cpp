@@ -11,8 +11,8 @@ void dfs(int l2,int r2,int l3,int r3)
             break;
     }
     cout<<s3[r3];
-    dfs(l2,l2+i-1,l3,r3-(r2-i)-1);
-    dfs(l2+i+1,r2,r3-(r2-i),r3-1);
+    dfs(l2,i-1,l3,r3-(r2-i)-1);
+    dfs(i+1,r2,r3-(r2-i),r3-1);
 }
 int main()
 {
